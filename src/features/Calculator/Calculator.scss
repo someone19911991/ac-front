@@ -1,0 +1,246 @@
+@import "../../index";
+
+.calculation-loading{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        height: 80%
+    }
+}
+
+.calculator {
+    color: white;
+    //background-image: url("../../assets/images/shipping_bg.png");
+    background-image: url("../../assets/images/blue.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    .container {
+        padding-top: 20px;
+        color: black;
+        font-size: 15px;
+        font-weight: 700;
+        width: 50%;
+        max-width: 650px;
+        @media screen and (max-width: 900px){
+            width: 80%;
+        }
+        @media screen and (max-width: 800px){
+            width: 95%;
+        }
+        margin: 0 auto;
+        .title {
+            font-weight: 700;
+            font-size: 17px;
+            color: #fff
+        }
+        .fields {
+            position: relative;
+            .separator{
+                border: 1px solid white;
+                position: absolute;
+                height: calc(100% - 57px);
+                left: 50%;
+                @media screen and (max-width: 550px) {
+                    display: none;
+                }
+            }
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .calculate{
+                max-width: max-content;
+                align-self: center;
+            }
+            .field-container {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                & > * {
+                    width: 45%;
+                }
+                @media screen and (max-width: 550px){
+                    flex-direction: column;
+                    & > *{
+                        width: 100%;
+                    }
+                    gap: 15px;
+                }
+                .auction {
+                    .auction_content {
+                        display: flex;
+                        gap: 20px;
+                        div,
+                        input {
+                            width: 60px;
+                            height: 25px;
+                            border-radius: 5px;
+                            border: 2px solid white;
+                        }
+                        div {
+                            &.selected {
+                                border: 4px solid var(--gold);
+                            }
+                            background-size: 100% 100%;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-color: white;
+                            font-size: 14px;
+                            font-weight: 700;
+                            text-align: center;
+                            cursor: pointer;
+                            &:first-child {
+                                background-image: url("../../assets/images/iaai.svg");
+                                background-size: 100% 135%;
+                            }
+                            &:nth-child(2) {
+                                background-image: url("../../assets/images/coopart.png");
+                            }
+                        }
+                        input {
+                            padding: 5px;
+                        }
+                    }
+                }
+                .shipping {
+                    background-color: #fff;
+                    height: 38px;
+                    line-height: 38px;
+                    border-radius: 5px;
+                    padding-left: 10px;
+                }
+                .field{
+                    .off-road{
+                        margin-top: 12px;
+                        input[type="checkbox"]{
+                            transform: scale(1.5);
+                        }
+                    }
+                }
+            }
+            .calculate_btn{
+                font-size: 18px;
+                font-weight: 700;
+                background-color: #fff;
+                align-self: center;
+                padding: 5px 20px;
+                outline: 2px solid white;
+                border: 2px solid var(--blue);
+                border-radius: 5px;
+                color: var(--blue);
+                cursor: pointer;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .calculations{
+        flex-grow: 1;
+        padding: 10px 0;
+        background-color: white;
+        width: 100%;
+        margin: 0 auto;
+        .container{
+            width: 50%;
+            max-width: 650px;
+            @media screen and (max-width: 750px){
+                width: 98%;
+            }
+            @media screen and (max-width: 500px){
+                width: 100%;
+            }
+            margin: 0 auto;
+            .row{
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                @media screen and (max-width: 500px){
+                    flex-direction: column;
+                }
+                &.results_row{
+                    background-color: white;
+                    font-size: 14px;
+                    line-height: 30px;
+                    color: black;
+                    display: flex;
+                    & > span{
+                        padding-left: 10px;
+                        background-color: var(--calc_color);
+                        &.total{
+                            flex-basis: 40%;
+                        }
+                        &.amd{
+                            flex-basis: 30%;
+                        }
+                        &.dollar{
+                            flex-basis: 30%;
+                        }
+                    }
+                    @media screen and (max-width: 500px) {
+                        flex-direction: row;
+                        width: 90%;
+                        margin: 0 auto;
+                    }
+                    @media screen and (max-width: 425px){
+                        flex-direction: column;
+                    }
+                }
+                &.results_info{
+                    display: flex;
+                    color: var(--grey);
+                    font-size: 9px;
+                    & > div{
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        & > span:first-child{
+                            width: 15px;
+                            height: 15px;
+                            min-width: 15px;
+                            min-height: 15px;
+                        }
+                    }
+                    @media screen and (max-width: 500px) {
+                        width: 90%;
+                        margin: 10px auto;
+                    }
+                }
+            }
+            .results_row_separator{
+                border: 1px solid var(--calc_color);
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+.preview_btn, .download_btn{
+    margin: 10px auto;
+    display: block;
+    background-color: var(--blue);
+    padding: 5px 10px;
+    color: white;
+    outline: 2px solid var(--blue);
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    &:hover{
+        background-color: white;
+        color: var(--blue);
+        outline: 2px solid white;
+        border: 2px solid var(--blue);
+    }
+}
+
+.preview_btn{
+    z-index: 1;
+}
+

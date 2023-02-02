@@ -1,0 +1,29 @@
+.contact_page{
+    .contact_container, .foreign_branch{
+        width: 95%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    .contact_container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 20px;
+    }
+    .foreign_branch{
+        .our_foreign_branches{
+            font-size: 25px;
+            font-weight: 700;
+        }
+        .branch_name{
+            font-size: 17px;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+        .flag{
+            width: 200px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

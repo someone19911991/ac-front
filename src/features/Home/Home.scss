@@ -1,0 +1,33 @@
+.home{
+  .home_bg{
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/images/home_bg.jpg");
+    height: 1200px
+  }
+  padding-left: 10px;
+  padding-bottom: 30px;
+  color: black;
+  .title{
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  .underline{
+    display: inline-block;
+    width: 100px;
+    border: 2px solid var(--red);
+  }
+  .subtitle{
+    margin: 10px 0;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .container{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+}

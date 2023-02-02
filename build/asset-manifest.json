@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2cb3f37c.css",
+    "main.js": "/static/js/main.7772ffc9.js",
+    "static/media/autocomplex.png": "/static/media/autocomplex.7e49d8d95bfae05bfc04.png",
+    "static/media/home_bg.jpg": "/static/media/home_bg.7d50a422343b0614fd5d.jpg",
+    "static/media/blue.jpg": "/static/media/blue.0116de6a38e41bccadc7.jpg",
+    "static/media/call.jpg": "/static/media/call.518b8c0e6f17121456c0.jpg",
+    "static/media/loading.gif": "/static/media/loading.803f24369a085e35482e.gif",
+    "static/media/repair.png": "/static/media/repair.d19eee77632d4b37322e.png",
+    "static/media/coopart.png": "/static/media/coopart.2e5e27269181df279ff9.png",
+    "static/media/spare_parts.png": "/static/media/spare_parts.34b6d99f0b9c02e8ddac.png",
+    "static/media/return.png": "/static/media/return.5131e6777e67e6c49750.png",
+    "static/media/credit.png": "/static/media/credit.6f604d502feac6d9b51f.png",
+    "static/media/iaai.svg": "/static/media/iaai.18e2f9b8d3a79923a8a7.svg",
+    "index.html": "/index.html",
+    "static/media/getFetch.cjs": "/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.2cb3f37c.css.map": "/static/css/main.2cb3f37c.css.map",
+    "main.7772ffc9.js.map": "/static/js/main.7772ffc9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2cb3f37c.css",
+    "static/js/main.7772ffc9.js"
+  ]
+}

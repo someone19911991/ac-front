@@ -1,0 +1,142 @@
+{
+    "order_call": "ORDER A CALL",
+    "reach_us": "REACH US ANY TIME AT",
+    "nav": {
+        "our_team": "OUR TEAM",
+        "calculator": "CALCULATOR",
+        "home": "HOME"
+    },
+    "main": {
+        "title": "BUYING WITH US IS PROFITABLE AND SAFE",
+        "subtitle": "GET ALL SERVICES IN 1 PACKAGE",
+        "item_titles": {
+            "spare_parts": "Spare Parts",
+            "repair": "Repair",
+            "car_selection": "Car selection",
+            "deposit_payment": "Deposit payment",
+            "car_history": "Car history",
+            "auction_participation": "Participation in the auction",
+            "contract_signing": "Contract Signing",
+            "inland_transportation": "Inland transportation",
+            "insurance": "Insurance",
+            "sea_freight": "Sea freight",
+            "customs_clearance": "Customs clearance",
+            "credit": "Credit",
+            "refund": "Refund",
+            "delivery": "Delivery"
+        },
+        "spare_parts": "Ordering original car spare parts from USA, Dubai and Russia",
+        "repair": "Quick organization of the car repair process",
+        "car_selection": "Individual approach to car selection, pricing and other costs by our experienced specialists",
+        "deposit_payment": "In the amount of 15% of the planned auction price, but not less than AMD 500,000. The deposit is refundable until the car is purchased",
+        "car_history": "Before participating in the auction, your manager will check the history of the preferred car (autocheck, carfax)",
+        "auction_participation": "We participate in the auction in your presence or online and buy the car at the planned price",
+        "contract_signing": "Where is the final price of the car fixed in RA, the 3 stages of payment, the rights and responsibilities of the parties",
+        "inland_transportation": "The car is transported from the auction to the appropriate port, additional photos of the car are provided upon arrival.",
+        "insurance": "Shipping insurance is provided through leading local insurance companies based on port drawings",
+        "sea_freight": "The car is loaded into a container, with the help of a special number you can track the movement of your property",
+        "customs_clearance": "In the presence of our specialists, the car is unloaded from the container and cleared through customs through our brokerage organization",
+        "credit": "Purchase the car on credit before arriving in Armenia",
+        "refund": "Return of the car if desired, without any penalty or fine",
+        "delivery": "The already cleared car is handed over to you based on the sales contract"
+    },
+    "calc": {
+        "errors": {
+            "invalid_value": "Invalid value specified"
+        },
+        "title": "Below calculator allows you to count the auction fee, shipping, insurance and customs clearance according to the 2020 EEC tariffs.",
+        "fields": {
+            "car_price": "Car Price",
+            "auction_fee": "Auction Fee",
+            "select_location": "Select Location",
+            "selected_location": "Auction Location",
+            "shipping": "Shipping",
+            "fuel_type": "Fuel Type",
+            "age": "Age",
+            "engine": "Engine, cm³",
+            "vehicle_type": "Vehicle Type",
+            "off_road": "High permeability",
+            "calculate": "CALCULATE",
+            "other": "other",
+            "dd_lists": {
+                "fuel_type": {
+                    "1": "Petrol",
+                    "2": "Diesel",
+                    "3": "Hybrid",
+                    "4": "Full electric"
+                },
+                "age": {
+                    "1": "up to 3 years",
+                    "2": "3 - 5 years",
+                    "3": "5 - 7 years",
+                    "4": "7+",
+                    "5": "0 - 5 years",
+                    "6": "5 - 10 years",
+                    "7": "10 - 15 years"
+                },
+                "vehicle_type": {
+                    "motorcycle": "Motorcycle",
+                    "sedan": "Sedan",
+                    "pickup": "Pickup",
+                    "suv": "SUV"
+                }
+            }
+        },
+        "calculation_preview": "CALCULATION PREVIEW",
+        "print": "Download",
+        "clean_old": "Clean"
+    },
+    "footer": {
+        "address1": "Gyumri, G. Nzhdeh 19",
+        "address2": "Gyumri, P. Sevak 9/5",
+        "address3": "Yerevan, Araratyan 82",
+        "contact": "Contact",
+        "find_us": "FIND US ON SOCIAL MEDIA"
+    },
+    "contact_with_team": {
+        "specifications": {
+            "sales_manager": "Sales Manager",
+            "spare_parts_manager": "Spare Parts Manager",
+            "logistics_specialist": "Logistics specialist",
+            "customs_broker": "Customs Broker",
+            "finance_director": "Director of Finance",
+            "director": "Director"
+        },
+        "specialists": {
+            "nikolay_ghazaryan": "Nikolay Ghazaryan",
+            "hayk_melkonyan": "Hayk Melkonyan",
+            "rafik_yeranosyan": "Rafik Yeranosyan",
+            "azat_avalyan": "Azat Avalyan",
+            "victoria_aghabekyan": "Victoria Aghabekyan",
+            "lyova_igityan": "Lyova Igityan",
+            "hayk_meloyan": "Hayk Meloyan",
+            "hayk_igityan": "Hayk Igityan"
+        },
+        "foreign_branch": ["OUR FOREIGN BRANCHES", "RUSSIAN FEDERATION"]
+    },
+    "print": {
+        "service_fee": "Service Fee",
+        "customs_duty": "Customs Duty",
+        "vat": "VAT",
+        "eco_tax": "Eco Tax",
+        "broker_fee": "Broker Fee",
+        "total": "TOTAL",
+        "col_1": "Within 1(one) day after buying the vehicle",
+        "col_2": "Within 45 (forty five) days after signing the Agreement",
+        "col_3": "Within 3 (three) days, after receiving notification about the import of the vehicle",
+        "auction": "Auction"
+    },
+    "order_a_call": {
+        "name": "Name Surname",
+        "phone": "Phone",
+        "budget": "Budget",
+        "min": "Min",
+        "max": "Max",
+        "car_model": "Car model",
+        "notes": "Leave notes",
+        "attach_calculation": "Attach Calculation",
+        "invalid_number": "invalid phone number specified",
+        "pdf_only": "file must be of PDF type",
+        "file_max_size": "file max size must be 5MB"
+    }
+}

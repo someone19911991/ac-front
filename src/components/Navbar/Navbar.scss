@@ -1,0 +1,80 @@
+.navbar{
+  background-color: white;
+  padding-right: 5px;
+  .navbar-content{
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    .logo{
+      height: 100px;
+      img{
+        height: 100%;
+      }
+    }
+    & > ul{
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      align-items: center;
+      height: 100px;
+      list-style-type: none;
+      li{
+        &.order_call{
+          p{
+            white-space: nowrap;
+            color: white;
+            padding: 4px 10px;
+            background-color: var(--blue);
+            outline: 2px solid var(--blue);
+            border: 2px solid white;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            &:hover{
+              color: var(--blue);
+              background-color: white;
+              outline: 2px solid white;
+              border: 2px solid var(--blue);
+            }
+          }
+        }
+        a {
+          color: var(--blue);
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: bold;
+        }
+
+        &.languages{
+          select{
+            font-size: 11px;
+            font-weight: 300;
+            outline: 0;
+            border: 0;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.clean_btn{
+  color: white;
+  padding: 4px 10px;
+  background-color: var(--blue);
+  outline: 2px solid var(--blue);
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover{
+    color: var(--blue);
+    background-color: white;
+    outline: 2px solid white;
+    border: 2px solid var(--blue);
+  }
+}
