@@ -448,6 +448,7 @@ const Calculator = () => {
             const auto_type = lsValues.auto_type.value
             // @ts-ignore
             const auction_location_price = priceList[auction_location_id][auto_type]
+
             setShowCalc({
                 price,
                 auction_location_price,
