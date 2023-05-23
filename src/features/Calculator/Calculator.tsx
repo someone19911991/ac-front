@@ -22,6 +22,8 @@ import LoadingImg from "../../assets/images/loading.gif";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
+const priceList = { ...data }
+
 type SelectValue = {
     label: string;
     value: string;
@@ -287,6 +289,7 @@ const Calculator = () => {
             if (calcData2.auction_location_price) {
                 setValue("auction_location", calcData2.auction_location_price);
                 valuesToSet.shippingPrice = calcData2.auction_location_price;
+                console.log({"calcData2.auction_location_price": calcData2.auction_location_price});
                 showCalcData.auction_location_price =
                     calcData2.auction_location_price;
             }
@@ -417,8 +420,8 @@ const Calculator = () => {
             data.checkbox = lsValues.checkbox ? 1 : 0;
             setLoadingCalculate(true);
             let result = await axios.post(
-                "https://www.backend.autocomplex.am/api/calculate",
-                // "http://localhost:5000/api/calculate",
+                // "https://www.backend.autocomplex.am/api/calculate",
+                "http://localhost:5000/api/calculate",
                 data
             );
             const response = result.data as ICalcResponse;
@@ -427,7 +430,7 @@ const Calculator = () => {
             const {
                 auction,
                 engine_volume,
-                auction_location_price,
+                // auction_location_price,
                 auction_location_id,
                 insurance_price,
                 total_price1,
@@ -441,6 +444,10 @@ const Calculator = () => {
                 year,
                 motor,
             } = response;
+
+            const auto_type = lsValues.auto_type.value
+            // @ts-ignore
+            const auction_location_price = priceList[auction_location_id][auto_type]
             setShowCalc({
                 price,
                 auction_location_price,
@@ -509,6 +516,7 @@ const Calculator = () => {
             </h2>
         );
     }
+
 
     return (
         <>
